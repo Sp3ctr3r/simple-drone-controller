@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>iha</title>
+</head>
+<body class="container" style="background-color:#2c3e50;" onload="scan()">
+
+    <div class="console row">
+        <div class="col-md-3"><button type="button" class="btn btn-success col-md-3" id="firstButton" onmousedown="decrease()" onmouseup="stop()">Down</button></div>
+        <div class="col-md-1"></div>
+        <span class="bg-info d-inline-block col-md-4" id="bp">
+            <div id="progress">
+                <div id="bar">Battery</div>
+            </div>
+        </span>
+        <div class="col-md-1"></div>
+        <div class="col-md-3"><button type="button" class="btn btn-success" id="secondButton" onmousedown="increase()" onmouseup="stop()">Up</button></div>
+    </div>
+    <div class="consoleBottom row">
+        <div class="col-md-7" id="firstSpan"><div class="flex-container" id="rad">Radar</div></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4" id="secondSpan"><span id="alt">ALTITUDE<br><span id="alt2">0 FT</span></span></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
